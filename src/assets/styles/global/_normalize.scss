@@ -1,3 +1,4 @@
+*,
 *::after,
 *::before {
     padding: 0;
@@ -31,15 +32,14 @@ button {
 }
 
 .container {
-    max-width: 1440px;
+    max-width: 1460px;
     width: 100%;
     margin: 0 auto;
-    padding: 0 30px;
+    padding: 0 20px;
 }
 
 body{
     background-color: #fff;
-    scroll-behavior: smooth;
 }
 
 .wrapper{
@@ -47,7 +47,7 @@ body{
 }
 
 ::-webkit-scrollbar{
-    width: 4px;
+    width: 7px;
 }
 
 ::-webkit-scrollbar-track{
@@ -55,7 +55,7 @@ body{
 }
 
 ::-webkit-scrollbar-thumb{
-    background-color: #222;
+    background-color: #aaaaaa;
     border-radius: 10px;
 }
 
@@ -63,4 +63,8 @@ input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
+}
+
+body.scroll{
+    overflow-y: hidden;
 }

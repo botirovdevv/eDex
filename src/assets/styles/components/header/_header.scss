@@ -1,0 +1,139 @@
+.header {
+    padding-top: 50px;
+
+    &-texts{
+        position: relative;
+        @include flex(start, unset);
+        flex-direction: column;
+        gap: 7px;
+
+        @media screen and (max-width: 1290px){
+            gap: 24px;
+        }
+    }
+
+    &-icon{
+        position: absolute;
+        top: 70px;
+        right: 0;
+    }
+
+    &-title {
+        font-family: $font-family;
+        font-weight: 600;
+        @include adaptive-value('font-size', 24, 21);
+        line-height: 133%;
+        letter-spacing: 0em;
+        color: $primary-500;
+    }
+
+    &-main_title {
+        font-family: $font-family;
+        font-weight: 600;
+        @include adaptive-value('font-size', 50, 35);
+        line-height: 129%;
+        color: $primary-900;
+        width: 630px;
+
+        @media screen and (max-width: 1333px){
+            width: 100%
+        }
+
+        @media screen and (max-width: 1290px){
+            width: 700px;
+        }
+
+        @media screen and (max-width: 768px){
+            width: 100%;
+        }
+    }
+
+    &-number {
+        color: $primary-500;
+    }
+
+    &-subtitle {
+        font-family: $font-family;
+        font-weight: 400;
+        @include adaptive-value('font-size', 20, 17);
+        line-height: 140%;
+        color: $gray-500;
+        @media screen and (max-width: 1333px){
+            width: 100%
+        }
+    }
+
+    &-img {
+        border-radius: 8px;
+        width: 312px;
+        height: 418px;
+    }
+
+    &-next_img {
+        border-radius: 8px;
+        width: 312px;
+        height: 418px;
+        transform: translateX(-100px);
+    }
+
+    &-content {
+        @include flex(center, space-between)
+    }
+
+    &-items{
+        position: relative;
+        border-radius: 8px;
+        width: 600px;
+        height: 60px;
+        background: $gray-white;
+        box-shadow: -4px -4px 44px 0 rgba(0, 0, 0, 0.08);
+
+        @media screen and (max-width: 635px){
+            width: 100%;
+        }
+    }
+
+    &-input{
+        width: 100%;
+        height: 100%;
+        border: none;   
+        outline: none;
+        font-family: $font-family;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+        color: $gray-500;
+        padding: 0 14px;
+        border: 1px solid transparent;
+        transition: all 0.2s ease-in-out;
+        border-radius: 8px;
+
+        &:focus{
+            border: 1px solid $primary-700;
+        }
+    }
+
+    &-search_btn{
+        position: absolute;
+        top: 19px;
+        border: none;
+        right: 25px;
+        font-size: 22px;
+    }
+
+    &-images{
+        position: relative;
+        @include flex(center, unset);
+
+        @media screen and (max-width: 1290px){
+            display: none;
+        }
+    }
+
+    &-line{
+        position: absolute;
+        right: 0;
+        top: 105px;
+        z-index: -99;
+    }
+}

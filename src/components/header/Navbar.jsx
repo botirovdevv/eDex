@@ -9,10 +9,12 @@ const Navbar = () => {
 
   const openMenu = () => {
     setIsOpen(true)
+    document.body.classList.add('scroll')
   }
 
   const closeMenu = () => {
     setIsOpen(false)
+    document.body.classList.remove('scroll')
   }
   return (
     <nav className='nav'>
