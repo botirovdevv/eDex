@@ -1,13 +1,18 @@
 import React from 'react'
 import Navbar from './components/header/Navbar'
-import Header from './components/header/Header'
+import { Route, Routes } from 'react-router-dom'
+import { routes } from './helpers/routes'
 
 const App = () => {
   return (
-    <main className='main'>
-      <Navbar/>
-      <Header/>
-    </main>
+    <div className='wrapper'>
+      <Navbar />
+      <Routes>
+        {routes.map((item) => (
+          <Route path={item.path} element={item.element} key={item.path} />
+        ))}
+      </Routes>
+    </div>
   )
 }
 
