@@ -3,6 +3,7 @@ import logo from '../../assets/images/logo.png'
 import { FaShoppingCart } from "react-icons/fa";
 import { IoClose } from "react-icons/io5";
 import { RiMenu3Fill } from "react-icons/ri";
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false)
@@ -26,7 +27,7 @@ const Navbar = () => {
           </a>
 
           <ul className={isOpen ? "nav-links show" : "nav-links"}>
-            <a href="#" className="nav-link">Home</a>
+            <Link to="/" className="nav-link">Home</Link>
             <a href="#" className="nav-link">About</a>
             <a href="#" className="nav-link">Course</a>
             <a href="#" className="nav-link">Blog</a>
@@ -38,12 +39,12 @@ const Navbar = () => {
           </ul>
 
           <div className="nav-items">
-            <a href="#" className='nav-backet_link'>
+            <Link to="/backet" className='nav-backet_link'>
               <FaShoppingCart />
               <span className="nav-course">
                 Courses
               </span>
-            </a>
+            </Link>
             <button className="nav-btn">
               Start now
             </button>

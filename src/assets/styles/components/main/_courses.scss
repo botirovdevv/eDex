@@ -72,6 +72,6 @@
     &-cards {
         @include flex(center, center);
         flex-wrap: wrap;
-        gap: 24px;
+        gap: 14px;
     }
 }

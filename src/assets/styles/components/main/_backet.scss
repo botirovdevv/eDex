@@ -1,0 +1,6 @@
+.backet{
+    &-title{
+        @include flex(center, center);
+        height: 90vh;
+    }
+}

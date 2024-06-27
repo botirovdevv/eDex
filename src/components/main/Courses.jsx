@@ -1,7 +1,10 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { MdOutlineAddShoppingCart } from "react-icons/md";
 import { courseData } from '../../data/courseData';
+import { CartContext } from '../../contexts/CartContext';
 const Courses = () => {
+    const { addToCart } = useContext(CartContext)
+
     return (
         <section className='courses'>
             <div className="container">
@@ -21,7 +24,7 @@ const Courses = () => {
                                     <h2 className='courses-language'>{item.language}</h2>
                                     <div className="courses-items">
                                         <span className='courses-price'>{item.price}</span>
-                                        <button className="courses-btn">
+                                        <button className="courses-btn" onClick={() => addToCart(item)}>
                                             <MdOutlineAddShoppingCart />
                                         </button>
                                     </div>
