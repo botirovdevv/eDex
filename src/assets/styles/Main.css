@@ -404,7 +404,7 @@ body.scroll {
 .courses {
   background: rgba(233, 248, 243, 0.7);
   padding: 50px 0;
-  margin-top: 100px;
+  margin: 100px 0;
 }
 .courses-card {
   border-radius: 16px;
@@ -412,6 +412,7 @@ body.scroll {
   width: 312px;
   height: 370px;
   background: #fff;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 .courses-card_title {
   font-family: "Public Sans", sans-serif;
@@ -476,5 +477,43 @@ body.scroll {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 24px;
+  gap: 14px;
+}
+
+.backet {
+  padding-top: 30px;
+}
+.backet-text {
+  font-family: "Public Sans", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+  font-size: 20px;
+}
+.backet-btn {
+  border: none;
+  font-size: 21px;
+  box-shadow: 0 3px 12px 0 rgba(75, 75, 75, 0.08);
+  background: #fff;
+  border-radius: 8px;
+  padding: 10px;
+  width: 44px;
+  height: 44px;
+  transition: all 0.2s ease-in-out;
+}
+.backet-btn:hover {
+  box-shadow: -4px 4px 20px 0 rgba(32, 180, 134, 0.12);
+  background: red;
+  color: #fff;
+}
+.backet-title {
+  font-family: "Public Sans", sans-serif;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 120%;
+  color: #06241b;
+}
+.backet-color {
+  color: #20b486;
 }/*# sourceMappingURL=Main.css.map */

@@ -13,12 +13,19 @@ export const CartProvider = ({children}) => {
             alert('Savatchada faqat 4ta mahsulot bo\'lishi mumkin.');
         } else {
             setCart([...cart, item]);
+            setShow(true)
         }
     };
+
+    const removeFromCart = (itemId) => {
+        setCart(
+            cart.filter((item) => item.id !== itemId)
+        )
+    }
     
 
     return(
-        <CartContext.Provider value={{addToCart, cart}}>
+        <CartContext.Provider value={{addToCart, removeFromCart, cart}}>
             {children}
         </CartContext.Provider>
     )
