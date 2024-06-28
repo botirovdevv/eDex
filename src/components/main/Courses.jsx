@@ -1,10 +1,20 @@
-import React, { useContext } from 'react'
+import React, { useContext, useEffect } from 'react'
 import { MdOutlineAddShoppingCart } from "react-icons/md";
 import { courseData } from '../../data/courseData';
 import { CartContext } from '../../contexts/CartContext';
+import ScrollReveal from 'scrollreveal';
 const Courses = () => {
     const { addToCart } = useContext(CartContext)
-
+    useEffect(() => {
+        ScrollReveal().reveal('.courses-title', {
+            duration: 1100,
+            delay: 10,
+            distance: '150px',
+            origin: 'left',
+            easing: 'ease-in-out',
+            reset: true
+        });
+    }, []);
     return (
         <section className='courses'>
             <div className="container">

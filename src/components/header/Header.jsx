@@ -1,9 +1,48 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { FiSearch } from "react-icons/fi";
 import img1 from '../../assets/images/header1.png'
 import img2 from '../../assets/images/header2.png'
+import ScrollReveal from 'scrollreveal';
+
 
 const Header = () => {
+  useEffect(() => {
+    ScrollReveal().reveal('.header-title', {
+      duration: 1100,
+      delay: 10,
+      distance: '70px',
+      origin: 'top',
+      easing: 'ease-in-out',
+      reset: true
+    });
+
+    ScrollReveal().reveal('.header-main_title', {
+      duration: 1100,
+      delay: 10,
+      distance: '100px',
+      origin: 'left',
+      easing: 'ease-in-out',
+      reset: true
+    });
+
+    ScrollReveal().reveal('.header-img', {
+      duration: 1100,
+      delay: 10,
+      distance: '100px',
+      origin: 'left',
+      easing: 'ease-in-out',
+      reset: true
+    });
+
+    ScrollReveal().reveal('.header-next_img', {
+      duration: 1100,
+      delay: 10,
+      distance: '100px',
+      origin: 'right',
+      easing: 'ease-in-out',
+      reset: true
+    });
+  }, []);
   return (
     <header className='header'>
       <div className="container">
