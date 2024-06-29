@@ -22,9 +22,9 @@ const Navbar = () => {
       <div className={isOpen ? "nav-bg show" : "nav-bg"} onClick={closeMenu}></div>
       <div className="container">
         <div className="nav-content">
-          <a href='/' className="nav-logo">
+          <Link to="/" className="nav-logo">
             <img src={logo} className='nav-logo_img' alt="" />
-          </a>
+          </Link>
 
           <ul className={isOpen ? "nav-links show" : "nav-links"}>
             <Link to="/" className="nav-link">Home</Link>

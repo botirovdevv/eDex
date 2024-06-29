@@ -1,8 +1,20 @@
 .achievement {
+    padding-bottom: 200px;
 
     &-cards {
         @include flex(center, unset);
         gap: 150px;
+
+        @media screen and (max-width: 970px) {
+            gap: 100px;
+        }
+
+        @media screen and (max-width: 530px) {
+            gap: unset;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
     }
 
     &-subtitle {
@@ -13,6 +25,8 @@
         color: $gray-500;
         padding-top: 10px;
         width: 100%;
+
+
     }
 
     &-icon {
@@ -35,6 +49,12 @@
         @include flex(center, unset);
         gap: 14px;
         margin-top: 80px;
+
+        @media screen and (max-width: 530px){
+            flex-direction: column;
+            justify-content: center;
+            margin-top: 50px;
+        }
     }
 
     &-num {
@@ -44,6 +64,11 @@
         line-height: 125%;
         letter-spacing: 0.01em;
         color: #000;
+
+        @media screen and (max-width: 530px){
+            text-align: center;
+        }
+
     }
 
     &-info {
@@ -52,6 +77,11 @@
         font-size: 17px;
         line-height: 140%;
         color: $gray-500;
+
+        @media screen and (max-width: 530px){
+            text-align: center;
+        }
+
     }
 
     &-img {
@@ -59,16 +89,31 @@
         height: 453px;
     }
 
-    &-items{
+    &-items {
         @include flex(start, unset);
         gap: 300px;
+
+        @media screen and (max-width: 1242px) {
+            justify-content: space-between;
+            gap: 30px;
+        }
+
+        @media screen and (max-width: 530px) {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
     }
 
-    &-images{
+    &-images {
         position: relative;
+
+        @media screen and (max-width: 970px) {
+            display: none;
+        }
     }
 
-    &-svg{
+    &-svg {
         position: absolute;
         bottom: 30px;
         left: -43px;

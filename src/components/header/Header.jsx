@@ -31,7 +31,6 @@ const Header = () => {
       distance: '100px',
       origin: 'left',
       easing: 'ease-in-out',
-      reset: true
     });
 
     ScrollReveal().reveal('.header-next_img', {
@@ -40,7 +39,6 @@ const Header = () => {
       distance: '100px',
       origin: 'right',
       easing: 'ease-in-out',
-      reset: true
     });
   }, []);
   return (
