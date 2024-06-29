@@ -14,6 +14,15 @@ const Courses = () => {
             easing: 'ease-in-out',
             reset: true
         });
+
+        ScrollReveal().reveal('.courses-card', {
+            duration: 900,
+            delay: 30,
+            distance: '150px',
+            origin: 'bottom',
+            easing: 'ease-in-out',
+            reset: true
+        });
     }, []);
     return (
         <section className='courses'>

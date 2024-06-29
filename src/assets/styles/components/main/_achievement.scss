@@ -1,0 +1,76 @@
+.achievement {
+
+    &-cards {
+        @include flex(center, unset);
+        gap: 150px;
+    }
+
+    &-subtitle {
+        font-family: $font-family;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 140%;
+        color: $gray-500;
+        padding-top: 10px;
+        width: 100%;
+    }
+
+    &-icon {
+        border-radius: 8px;
+        padding: 10px;
+        width: 64px;
+        height: 64px;
+        background: $primary-50;
+    }
+
+    &-camera_icon {
+        border-radius: 8px;
+        padding: 10px;
+        width: 64px;
+        height: 64px;
+        background: $secondary-50;
+    }
+
+    &-card {
+        @include flex(center, unset);
+        gap: 14px;
+        margin-top: 80px;
+    }
+
+    &-num {
+        font-family: $font-family;
+        font-weight: 600;
+        font-size: 28px;
+        line-height: 125%;
+        letter-spacing: 0.01em;
+        color: #000;
+    }
+
+    &-info {
+        font-family: $font-family;
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 140%;
+        color: $gray-500;
+    }
+
+    &-img {
+        width: 312px;
+        height: 453px;
+    }
+
+    &-items{
+        @include flex(start, unset);
+        gap: 300px;
+    }
+
+    &-images{
+        position: relative;
+    }
+
+    &-svg{
+        position: absolute;
+        bottom: 30px;
+        left: -43px;
+    }
+}
