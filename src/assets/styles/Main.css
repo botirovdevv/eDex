@@ -182,7 +182,7 @@ body.scroll {
 }
 @media screen and (max-width: 560px) {
   .nav-backet_link {
-    font-size: 22px;
+    font-size: 27px;
   }
 }
 .nav-items {
@@ -516,4 +516,226 @@ body.scroll {
 }
 .backet-color {
   color: #20b486;
+}
+
+.achievement {
+  padding-bottom: 100px;
+}
+.achievement-cards {
+  display: flex;
+  align-items: center;
+  justify-content: unset;
+  gap: 150px;
+}
+@media screen and (max-width: 970px) {
+  .achievement-cards {
+    gap: 100px;
+  }
+}
+@media screen and (max-width: 530px) {
+  .achievement-cards {
+    gap: unset;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.achievement-subtitle {
+  font-family: "Public Sans", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 140%;
+  color: #6d737a;
+  padding-top: 10px;
+  width: 100%;
+}
+.achievement-icon {
+  border-radius: 8px;
+  padding: 10px;
+  width: 64px;
+  height: 64px;
+  background: #e9f8f3;
+}
+.achievement-camera_icon {
+  border-radius: 8px;
+  padding: 10px;
+  width: 64px;
+  height: 64px;
+  background: #fffaf5;
+}
+.achievement-card {
+  display: flex;
+  align-items: center;
+  justify-content: unset;
+  gap: 14px;
+  margin-top: 80px;
+}
+@media screen and (max-width: 530px) {
+  .achievement-card {
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 50px;
+  }
+}
+.achievement-num {
+  font-family: "Public Sans", sans-serif;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 125%;
+  letter-spacing: 0.01em;
+  color: #000;
+}
+@media screen and (max-width: 530px) {
+  .achievement-num {
+    text-align: center;
+  }
+}
+.achievement-info {
+  font-family: "Public Sans", sans-serif;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 140%;
+  color: #6d737a;
+}
+@media screen and (max-width: 530px) {
+  .achievement-info {
+    text-align: center;
+  }
+}
+.achievement-img {
+  width: 312px;
+  height: 453px;
+}
+.achievement-items {
+  display: flex;
+  align-items: start;
+  justify-content: unset;
+  gap: 300px;
+}
+@media screen and (max-width: 1242px) {
+  .achievement-items {
+    justify-content: space-between;
+    gap: 30px;
+  }
+}
+@media screen and (max-width: 530px) {
+  .achievement-items {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.achievement-images {
+  position: relative;
+}
+@media screen and (max-width: 970px) {
+  .achievement-images {
+    display: none;
+  }
+}
+.achievement-svg {
+  position: absolute;
+  bottom: 30px;
+  left: -43px;
+}
+
+.student {
+  padding-bottom: 100px;
+}
+.student-card {
+  border-radius: 30px;
+  width: 628px;
+  height: 294px;
+  background: #fff;
+  border: 1px solid #6d737a;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 30px;
+}
+@media screen and (max-width: 1330px) {
+  .student-card {
+    width: 550px;
+  }
+}
+@media screen and (max-width: 1182px) {
+  .student-card {
+    width: 500px;
+  }
+}
+@media screen and (max-width: 1077px) {
+  .student-card {
+    width: 450px;
+    height: 100%;
+    padding: 30px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .student-card {
+    width: 100%;
+  }
+}
+.student-name {
+  font-family: "Public Sans", sans-serif;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 133%;
+  letter-spacing: 0em;
+  color: #000;
+}
+.student-job {
+  font-family: "Public Sans", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 150%;
+  color: #000;
+}
+.student-items {
+  display: flex;
+  align-items: start;
+  justify-content: unset;
+  flex-direction: column;
+  gap: 4px;
+}
+.student-info {
+  display: flex;
+  align-items: center;
+  justify-content: unset;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+.student-subtitle {
+  font-family: "Public Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #363a3d;
+}
+.student-text {
+  font-family: "Public Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #363a3d;
+  padding-top: 15px;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  overflow: clip;
+  list-style: none;
+  padding: 0px;
+  z-index: 1;
+  display: block;
+  padding-bottom: 50px;
+  margin-top: 40px;
 }/*# sourceMappingURL=Main.css.map */
