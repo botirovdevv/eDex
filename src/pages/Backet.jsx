@@ -3,7 +3,7 @@ import { CartContext } from '../contexts/CartContext'
 import { MdRemoveShoppingCart } from "react-icons/md";
 
 const Backet = () => {
-    const { cart, removeFromCart } = useContext(CartContext)
+    const { cart, removeFromCart, clearAll } = useContext(CartContext)
     return (
         <div>
             {
@@ -12,7 +12,10 @@ const Backet = () => {
                 ) : (
                     <section className="backet">
                         <div className="container">
-                            <h1 className="backet-title">Your <span className='backet-color'>Courses</span></h1>
+                            <div className="backet-items">
+                                <h1 className="backet-title">Your <span className='backet-color'>Courses</span></h1>
+                                <button className="backet-clear_btn" onClick={clearAll}>Clear All</button>
+                            </div>
                             <div className="courses-cards">
                                 {
                                     cart.map((item) => (

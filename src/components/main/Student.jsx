@@ -1,4 +1,5 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import ScrollReveal from 'scrollreveal';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 import 'swiper/css';
@@ -10,6 +11,17 @@ import { Pagination, Autoplay } from 'swiper/modules';
 import { studentsData } from '../../data/studentsData';
 
 const Student = () => {
+  useEffect(() => {
+    ScrollReveal().reveal('.backet-title', {
+      duration: 1100,
+      delay: 10,
+      distance: '150px',
+      origin: 'bottom',
+      easing: 'ease-in-out',
+      reset: true
+    });
+
+  }, [])
   return (
     <section className='student'>
       <div className="container">
